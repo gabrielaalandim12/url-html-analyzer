@@ -65,7 +65,7 @@ A implementação considera as seguintes premissas:
 
 ---
 
-## Descrição da Solução
+## Descrição da Solucao
 
 O programa realiza a leitura do HTML linha por linha e utiliza uma **pilha** para controlar as tags abertas durante o processamento.
 
@@ -75,7 +75,7 @@ A validação da estrutura do HTML é feita por meio da verificação da corresp
 
 ---
 
-## Execução
+## Execucao
 
 Exemplo de execução do programa:
 
@@ -84,7 +84,7 @@ java HtmlAnalyzer [https://hiring.axreng.com/internship/example1.html](https://h
 
 ---
 
-## Execução
+## Considerações finais
 
 A solução foi projetada sob os princípios de **Clean Code** e eficiência algorítmica. A escolha da estrutura de dados **Stack (Pilha)** para o processamento das tags garante que a análise seja feita em tempo linear, $O(n)$, onde $n$ é o número de caracteres do documento, garantindo performance mesmo em arquivos HTML extensos.
 
