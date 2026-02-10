@@ -62,12 +62,6 @@ A profundidade de cada trecho de texto é determinada pela quantidade de tags ab
 
 A validação da estrutura do HTML é feita por meio da verificação da correspondência entre tags de abertura e fechamento. Caso seja identificada qualquer inconsistência, o HTML é considerado malformado.
 
-## Execução
-
-Exemplo de execução do programa:
-
-java HtmlAnalyzer https://hiring.axreng.com/internship/example1.html
-
 ## Considerações finais
 
 A solução foi implementada com foco em clareza e simplicidade, priorizando a legibilidade do código e o atendimento aos requisitos do desafio.
