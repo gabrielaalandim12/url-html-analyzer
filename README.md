@@ -66,7 +66,7 @@ A implementação considera as seguintes premissas:
 
 ---
 
-## Descrição da Solução
+## Descrição da Solucão
 
 O programa realiza a leitura do HTML linha por linha e utiliza uma **pilha** para controlar as tags abertas durante o processamento.
 
@@ -82,3 +82,15 @@ Exemplo de execução do programa:
 
 ```bash
 java HtmlAnalyzer [https://hiring.axreng.com/internship/example1.html](https://hiring.axreng.com/internship/example1.html)
+```
+
+---
+
+## Considerações finais
+
+A solução foi projetada sob os princípios de **Clean Code** e eficiência algorítmica. A escolha da estrutura de dados **Stack (Pilha)** para o processamento das tags garante que a análise seja feita em tempo linear, garantindo performance mesmo em arquivos HTML extensos.
+
+A implementação prioriza:
+* **Robustez:** Tratamento de exceções de rede e malformação de tags.
+* **Legibilidade:** Código autoexplicativo e estruturado.
+* **Conformidade:** Estrita aderência aos requisitos técnicos (RT5 a RT8).
