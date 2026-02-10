@@ -81,7 +81,10 @@ Exemplo de execução do programa:
 
 ```bash
 java HtmlAnalyzer [https://hiring.axreng.com/internship/example1.html](https://hiring.axreng.com/internship/example1.html)
-## Considerações Finais
+
+---
+
+## Execução
 
 A solução foi projetada sob os princípios de **Clean Code** e eficiência algorítmica. A escolha da estrutura de dados **Stack (Pilha)** para o processamento das tags garante que a análise seja feita em tempo linear, $O(n)$, onde $n$ é o número de caracteres do documento, garantindo performance mesmo em arquivos HTML extensos.
 
