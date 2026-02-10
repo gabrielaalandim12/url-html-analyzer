@@ -51,41 +51,36 @@ A implementação considera as seguintes premissas:
 
 **RT4** – Permitir a compilação do programa por meio do comando:
 
-```bash
-javac HtmlAnalyzer.java
-
 **RT5** – Permitir a execução do programa por meio do comando:
+  `javac HtmlAnalyzer.java` e `java HtmlAnalyzer inserir-url-aqui`
 
-java HtmlAnalyzer inserir-url-aqui
+ **RT6** – Gerar exclusivamente os seguintes tipos de saída no console padrão:
+    * Trecho de texto identificado no HTML;
+    * Mensagem "malformed HTML";
+    * Mensagem "URL connection error".
 
-**RT6** – Gerar exclusivamente os seguintes tipos de saída no console padrão:
+ **RT7** – Disponibilizar o código-fonte em arquivos `.java` e este arquivo `README.md`, compatíveis com **UTF-8**.
 
-Trecho de texto identificado no HTML;
+ **RT8** – Preparar a entrega da solução em arquivo `.tar` ou `.tar.gz`, nomeado conforme o nome do(a) candidato(a), sem acentos e com espaços substituídos por underscore.
 
-Mensagem "malformed HTML";
+---
 
-Mensagem "URL connection error".
+## Descrição da Solução
 
-**RT7** – Disponibilizar o código-fonte em arquivos .java e este arquivo README.md, compatíveis com UTF-8.
+O programa realiza a leitura do HTML linha por linha e utiliza uma **pilha** para controlar as tags abertas durante o processamento.
 
-**RT8** – Preparar a entrega da solução em arquivo .tar ou .tar.gz, nomeado conforme o nome do(a) candidato(a), sem acentos e com espaços substituídos por underscore.
+A profundidade de cada trecho de texto é determinada pela quantidade de tags abertas no momento da leitura. Sempre que um trecho de texto é encontrado em um nível mais profundo do que os anteriores, ele é armazenado como resultado.
 
-## Descrição da solução
+A validação da estrutura do HTML é feita por meio da verificação da correspondência entre tags de abertura e fechamento. Caso seja identificada qualquer inconsistência, o HTML é considerado malformado.
 
-O programa realiza a leitura do HTML linha por linha e utiliza uma pilha para controlar as tags abertas durante o processamento.
-
-A profundidade de cada trecho de texto é determinada pela quantidade de tags abertas no momento da leitura.
-Sempre que um trecho de texto é encontrado em um nível mais profundo do que os anteriores, ele é armazenado como resultado.
-
-A validação da estrutura do HTML é feita por meio da verificação da correspondência entre tags de abertura e fechamento.
-Caso seja identificada qualquer inconsistência, o HTML é considerado malformado.
+---
 
 ## Execução
 
 Exemplo de execução do programa:
 
-java HtmlAnalyzer https://hiring.axreng.com/internship/example1.html
-
+```bash
+java HtmlAnalyzer [https://hiring.axreng.com/internship/example1.html](https://hiring.axreng.com/internship/example1.html)
 ## Considerações Finais
 
 A solução foi projetada sob os princípios de **Clean Code** e eficiência algorítmica. A escolha da estrutura de dados **Stack (Pilha)** para o processamento das tags garante que a análise seja feita em tempo linear, $O(n)$, onde $n$ é o número de caracteres do documento, garantindo performance mesmo em arquivos HTML extensos.
