@@ -86,6 +86,11 @@ Exemplo de execução do programa:
 
 java HtmlAnalyzer https://hiring.axreng.com/internship/example1.html
 
-## Considerações finais
+## Considerações Finais
 
-A solução foi desenvolvida com foco em simplicidade, clareza e aderência aos requisitos do desafio, priorizando uma implementação legível e alinhada às restrições propostas.
+A solução foi projetada sob os princípios de **Clean Code** e eficiência algorítmica. A escolha da estrutura de dados **Stack (Pilha)** para o processamento das tags garante que a análise seja feita em tempo linear, $O(n)$, onde $n$ é o número de caracteres do documento, garantindo performance mesmo em arquivos HTML extensos.
+
+A implementação prioriza:
+* **Robustez:** Tratamento de exceções de rede e malformação de tags.
+* **Legibilidade:** Código autoexplicativo e estruturado.
+* **Conformidade:** Estrita aderência aos requisitos técnicos (RT5 a RT8).
